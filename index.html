@@ -19,9 +19,12 @@
     <br>
     <form action="https://formsubmit.co/mary_cris21@yahoo.com" method="POST">
       <input type="hidden" name="_subject" value="New Email" required>
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <input type="text" name="message" placeholder="Your message here ..." required>
+      <label for="contact-name">Enter Your Name:</label>
+      <input type="text" name="name" id="contact-name" required>
+      <label for="email">Enter Your Email:</label>
+      <input type="email" name="email" id="email" required>
+      <label for="message">Message:</label>
+      <textarea type="text" name="message" id="message" rows="3" cols="40" placeholder="Your message here ..." required></textarea>
       <button type="submit">Send</button>
  </form>
 
